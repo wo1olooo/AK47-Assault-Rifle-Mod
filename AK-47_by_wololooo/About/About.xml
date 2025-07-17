@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>AK-47 by Wololooo</name>
+  <author>wololooo</author>
+  <packageId>wololooo.ak47</packageId>
+  <modVersion>1.0.0.0</modVersion>
+  <steamAppId>294100</steamAppId>
+  <description>The AK-47 is a relic from a time few remember, and fewer still believe ever truly existed. Forged in the twilight of Old Earth's final age, it was born not in glory, but in necessity — a response to decades of war, failure, and fading empires. 
+
+Old Earth — the first home of humanity, now little more than myth — was said to have burned beneath storms of ash and steel. In those dying years, the Soviet Union crafted the AK-47: a rugged, brutally simple rifle designed by Mikhail Kalashnikov and chambered in the 7.62×39mm intermediate round. It was not elegant. It was not advanced. But it endured.
+
+Where other weapons jammed or shattered, the AK-47 kept firing. It became a tool of rebellion, of empire, of survival — spreading across continents, then stars, before the great collapse erased nearly all traces of its origin.
+
+Centuries later, fragments of the rifle’s schematics were recovered from a derelict freighter adrift in deep void. Scorched files. Obsolete code. Just enough for a stubborn weaponsmith to rebuild a legend.
+
+Now, on the broken worlds of the Rim, the AK-47 walks again. Not rare. Not perfect. Just real.
+
+A weapon from the mythic cradle of mankind. Reborn in rust and blood. Still here.
+
+~wololooo</description>
+  <supportedVersions>
+	<li>1.6</li>
+    <li>1.5</li>
+  </supportedVersions>
+  
+  <modDependencies>
+    <li>
+      <packageId>wololooo.sovietResearchTab</packageId>
+      <displayName>Soviet Rifle Research Tab</displayName>
+      <downloadUrl>https://github.com/wo1olooo/Soviet-Rifle-Research-Tab-by-Wololooo</downloadUrl>
+    </li>
+	<li>
+      <packageId>wololooo.ASFortyFour</packageId>
+      <displayName>AS-44</displayName>
+      <downloadUrl>https://github.com/wo1olooo/AS-44-Assault-Rifle</downloadUrl>
+    </li>
+	
+  </modDependencies>
+  <url>https://github.com/wo1olooo/AK47-Assault-Rifle-Mod</url>
+  
+</ModMetaData>

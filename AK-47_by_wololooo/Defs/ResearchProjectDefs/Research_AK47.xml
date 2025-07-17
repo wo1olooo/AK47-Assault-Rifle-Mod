@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ResearchProjectDef>
+  
+	<!-- Naming the rifle's research etc. -->
+    <defName>Research_AK47_by_wololooo</defName>
+    <label>AK-47</label>
+    <description>Born from the ashes of Old Earth’s deadliest war, the AK-47 was designed for simplicity, power, and survival. Chambered in 7.62×39mm and built for function over finesse, it became the rifle of soldiers, rebels, and survivors alike. Centuries later, its schematic surfaced in a derelict Rimworld comms station — battered, but intact. Now, this symbol of reliability is ready to be forged again, not for empires — but for those who endure.
+	
+~wololooo</description>
+	
+	<tab>SovietGuns_by_wololooo</tab>
+	<!-- Cost and tech level. -->
+    <baseCost>2300</baseCost>
+    <techLevel>Industrial</techLevel>
+
+	<!-- The researche(s) should finished before the rifle's research. -->
+	
+	<prerequisites>
+      <li>Gunsmithing</li>
+	  <li>PrecisionRifling</li>
+	  <li>Soviet_Research_Program</li>
+	  <li>Research_AS44_by_wololooo</li>
+    </prerequisites>
+	
+	<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	
+	<!-- The place of rifle's on the research menu. -->
+    <researchViewX>3</researchViewX>
+    <researchViewY>0</researchViewY>
+	
+
+  </ResearchProjectDef>
+
+</Defs>

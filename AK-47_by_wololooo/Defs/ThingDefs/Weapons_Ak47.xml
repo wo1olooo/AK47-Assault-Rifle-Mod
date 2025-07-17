@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Gun_AK47_by_wololooo</defName>
+    <label>AK-47</label>
+    <description>A rugged, timeworn assault rifle from the lost world of Earth — humanity’s first cradle, now wrapped in legend and silence. The AK-47 delivers reliable automatic fire using the 7.62×39mm cartridge, sacrificing finesse for brute durability. Born as the evolution of the flawed AS44 — a prototype rifle that never quite met expectations — the AK-47 emerged from decades of trial and error during Old Earth’s turbulent final days.
+
+Though countless centuries have passed since its creation, its design endures. Recovered from corrupted schematics aboard a derelict void freighter drifting through the endless dark, this rifle was painstakingly rebuilt on the Rim by a determined few who sought to reclaim the lost art of survival. It jams less, hits hard, and shrugs off grime and neglect — just as it did in the ancient wars of a forgotten planet, where resources were scarce and reliability meant life or death.
+
+The AS44, once a hopeful but ultimately unsuccessful step, laid the groundwork for this legend — a weapon refined not for elegance, but for sheer dependability in unforgiving conditions.
+
+It is a tool shaped by countless hands, passed down through generations, a testament to human resilience and ingenuity. Its rugged form carries the echoes of battles long vanished beneath layers of dust and time.
+
+It’s not refined. It’s not rare. It just works.
+
+A survivor’s weapon from a mythic age, reborn in dust and fire — a relic that still carries the weight of humanity’s first home, standing as a silent guardian in the shadow of forgotten legends.
+
+~wololooo</description>
+
+    <graphicData>
+      <texPath>Things/Equipment/wololooo_AK47</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.10</drawSize>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <thingClass>ThingWithComps</thingClass>
+    <techLevel>Industrial</techLevel>
+	
+	
+	
+	<!-- The cost of the weapon. -->
+	<costList>
+	  <Steel>65</Steel>
+	  <ComponentIndustrial>3</ComponentIndustrial>
+	  <WoodLog>20</WoodLog>
+	</costList>
+	
+	
+	<!-- Needing skill to create the rifle and display the rifle in the craft menu -->
+	<recipeMaker>
+	  <recipeUsers>
+		<li>TableMachining</li>
+	  </recipeUsers>
+	  <skillRequirements>
+		<Crafting>5</Crafting>
+	  </skillRequirements>
+	  <researchPrerequisite>Research_AK47_by_wololooo</researchPrerequisite>
+	  <displayPriority>436</displayPriority>
+	</recipeMaker>	
+	
+	
+	<!-- By this, the gun also can be obtained from the quests. -->
+	<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+
+	
+	
+	<!-- I tried to give more realistic values, taking into account the balancing of the game. -->
+    <statBases>
+      <WorkToMake>27000</WorkToMake>
+      <Mass>4.3</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.68</AccuracyShort>
+      <AccuracyMedium>0.65</AccuracyMedium>
+      <AccuracyLong>0.54</AccuracyLong>
+      <RangedWeapon_Cooldown>1.85</RangedWeapon_Cooldown>
+      <MarketValue>750</MarketValue>
+	  <MaxHitPoints>180</MaxHitPoints>
+    </statBases>
+	
+	
+	<smeltable>true</smeltable>
+	
+	
+	<!-- Smelt back recources. -->
+	<smeltProducts>
+		<Steel>40</Steel>
+	</smeltProducts>
+	
+	
+	<!-- Weapon tags for further developments, so I will create a better mods for the game. -->
+    <weaponTags>
+	  <li>IndustrialGunAdvanced</li>
+      <li>AK-FortySeven</li>
+	  <li>wololoooSovietPack</li>
+    </weaponTags>
+	
+	
+	<!-- Close combat stats. -->
+	<tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	
+	
+	<!-- The gun's mechanics and values. -->
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+		<hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_AK47_762by39mm</defaultProjectile>
+        <warmupTime>1.1</warmupTime>
+        <range>29.0</range>
+        <soundCast>wololooo_ak47_firing_sound</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+		<muzzleFlashScale>12</muzzleFlashScale>
+        <burstShotCount>4</burstShotCount>
+        <ticksBetweenBurstShots>11</ticksBetweenBurstShots>
+      </li>
+    </verbs>
+	
+	
+	<!-- The comps section. -->
+	<comps>
+	  <li Class="CompProperties_Biocodable" /> 
+	</comps>
+	
+  </ThingDef>
+  
+  
+  
+	<!-- The bullet values, and mechanics. -->
+	<ThingDef ParentName="BaseBullet">
+	  <defName>Bullet_AK47_762by39mm</defName> 
+	  <label>7,62×39mm AK-47 bullet</label>
+	  <graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	  </graphicData>
+	  <projectile>
+		<damageDef>Bullet</damageDef>
+		<damageAmountBase>14</damageAmountBase>
+		<speed>65</speed> <!-- Because of 7.62mm, the bullet is heavier and travels slow. -->
+		<stoppingPower>1.37</stoppingPower>
+		<armorPenetrationBase>0.39</armorPenetrationBase>
+	  </projectile>
+	</ThingDef>
+
+</Defs>
