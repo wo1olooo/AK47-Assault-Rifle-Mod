@@ -8,7 +8,7 @@ This is a modular weapon mod and **does not function on its own**.
 
 You must have:
 - [Soviet Rifle Research Tab by Wololooo](https://github.com/wo1olooo/Soviet-Rifle-Research-Tab-by-Wololooo)
-- [AS-44 Rifle Mod]((https://github.com/wo1olooo/AS-44-Assault-Rifle))
+- [AS-44 Rifle Mod](https://github.com/wo1olooo/AS-44-Assault-Rifle)
 
 ## 🔧 Features
 
